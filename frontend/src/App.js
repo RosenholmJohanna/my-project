@@ -67,9 +67,11 @@ function App() {
             <button onClick={handleLogout}>Logout</button>
           </> :
           (<div className="login-container">
+          <form>
             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" className="input-field" />
             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" className="input-field" />
             <button onClick={handleLogin} className="login-button">Login</button>
+          </form>
           </div>)
         }
       </header>
